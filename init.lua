@@ -2,7 +2,8 @@
 function armor.add(name, def) -- or any other name
     minetest.register_tool(name, { -- or craftitem
         -- some fields...
-        inventory_image = def.texture, -- or any other name, again
+        inventory_image = def.inventory_image, -- or any other name, again
+        description = def.description,
         ---armor groups
         groups = {slash_armor = def.slash_armor,
         hack_armor = def.hack_armor,
@@ -17,6 +18,8 @@ function armor.add(name, def) -- or any other name
         radiation_armor = def.radiation_armor,
         cold_armor = def.cold_armor,
         heat_armor = def.heat_armor,
+        energy_armor = def.energy_armor,
+        laser_armor = def.laser_armor,
         ---armor weight
         armor_weight_walk = def.armor_weight_walk,
         armor_weight_jump = def.armor_weight_jump},
