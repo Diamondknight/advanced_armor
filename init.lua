@@ -2,6 +2,11 @@ dofile(minetest.get_modpath("advanced_armor") .. "/weapon_overrides.lua")
 
 --------------------------------------------API FOR NEW ARMORS----------------------------------------
 function adv_armor.add(name, def) -- or any other name
+	minetest.register_armor = (name, def)
+	--helmet_armor.add
+	--chest_armor.add
+	--legs_armor.add
+	--boots_armor.add
     minetest.register_tool(name, { -- or craftitem
         -- some fields...
         inventory_image = def.inventory_image, -- or any other name, again
