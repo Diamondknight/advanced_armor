@@ -1,5 +1,5 @@
 
---swords
+------------------------------------------------SWORDS-----------------------------------------------------------
 
 minetest.register_tool(":default:sword_wood", {
 	description = "Wooden Sword",
@@ -10,7 +10,7 @@ minetest.register_tool(":default:sword_wood", {
 		groupcaps={
 			snappy={times={[2]=1.6, [3]=0.40}, uses=10, maxlevel=1},
 		},
-		damage_groups = {fleshy=4, slash=3, hack=1, pierce=2, blunt=1, crumbly=1, choppy=1, snappy=5},
+		damage_groups = {fleshy=4, slash=3, hack=2, pierce=2, blunt=1, crumbly=1, choppy=1, snappy=5},
 	},
 	groups = {flammable = 2},
 	sound = {breaks = "default_tool_breaks"},
@@ -85,3 +85,94 @@ minetest.register_tool(":default:sword_diamond", {
 	},
 	sound = {breaks = "default_tool_breaks"},
 })
+
+------------------------------------------------AXES-----------------------------------------------------------
+minetest.register_tool("default:axe_wood", {
+	description = "Wooden Lumber Axe",
+	inventory_image = "default_tool_woodaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 1.0,
+		max_drop_level=0,
+		groupcaps={
+			choppy = {times={[2]=3.00, [3]=1.60}, uses=10, maxlevel=1},
+		},
+		damage_groups = {fleshy=3, slash=2, hack=4, pierce=1, blunt=1, crumbly=1, choppy=3, snappy=1},
+	},
+	groups = {flammable = 2},
+	sound = {breaks = "default_tool_breaks"},
+})
+
+minetest.register_tool("default:axe_stone", {
+	description = "Stone Lumber Axe",
+	inventory_image = "default_tool_stoneaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 1.3,
+		max_drop_level=0,
+		groupcaps={
+			choppy={times={[1]=3.00, [2]=2.00, [3]=1.30}, uses=20, maxlevel=1},
+		},
+		damage_groups = {fleshy=4, slash=2, hack=5, pierce=1, blunt=2, crumbly=1, choppy=4, snappy=1},
+	},
+	sound = {breaks = "default_tool_breaks"},
+})
+
+minetest.register_tool("default:axe_bronze", {
+	description = "Bronze Lumber Axe",
+	inventory_image = "default_tool_bronzeaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 1.5,
+		max_drop_level=1,
+		groupcaps={
+			choppy={times={[1]=2.75, [2]=1.70, [3]=1.15}, uses=20, maxlevel=2},
+		},
+		damage_groups = {fleshy=5, slash=3, hack=6, pierce=1, blunt=3, crumbly=1, choppy=6, snappy=1},
+	},
+	sound = {breaks = "default_tool_breaks"},
+})
+
+minetest.register_tool("default:axe_steel", {
+	description = "Steel Lumber Axe",
+	inventory_image = "default_tool_steelaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 1.4,
+		max_drop_level=1,
+		groupcaps={
+			choppy={times={[1]=2.50, [2]=1.40, [3]=1.00}, uses=20, maxlevel=2},
+		},
+		damage_groups = {fleshy=5, slash=3, hack=6, pierce=1, blunt=2, crumbly=1, choppy=6, snappy=1},
+	},
+	sound = {breaks = "default_tool_breaks"},
+})
+
+minetest.register_tool("default:axe_mese", {
+	description = "Mese Lumber Axe",
+	inventory_image = "default_tool_meseaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 1.4,
+		max_drop_level=1,
+		groupcaps={
+			choppy={times={[1]=2.20, [2]=1.00, [3]=0.60}, uses=20, maxlevel=3},
+		},
+		damage_groups = {fleshy=6, slash=4, hack=7, pierce=1, blunt=2, crumbly=1, choppy=7, snappy=1},
+	},
+	sound = {breaks = "default_tool_breaks"},
+})
+
+minetest.register_tool("default:axe_diamond", {
+	description = "Diamond Lumber Axe",
+	inventory_image = "default_tool_diamondaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 1.4,
+		max_drop_level=1,
+		groupcaps={
+			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=30, maxlevel=3},
+		},
+		damage_groups = {fleshy=7, slash=5, hack=8, pierce=1, blunt=2, crumbly=1, choppy=8, snappy=1},
+	},
+	sound = {breaks = "default_tool_breaks"},
+})
+
+------------------------------------------------PICKAXES-----------------------------------------------------------
+
+
+------------------------------------------------SHOVELS-----------------------------------------------------------
