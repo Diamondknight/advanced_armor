@@ -5,7 +5,8 @@ function armor.add(name, def) -- or any other name
         inventory_image = def.inventory_image, -- or any other name, again
         description = def.description,
         ---armor groups
-        groups = {slash_armor = def.slash_armor,
+        groups = {
+        slash_armor = def.slash_armor,
         hack_armor = def.hack_armor,
         pierce_armor = def.pierce_armor,
         blunt_armor = def.blunt_armor,
